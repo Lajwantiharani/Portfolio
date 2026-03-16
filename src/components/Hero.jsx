@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 
 const words = ['Software Engineer', 'MERN Developer'];
 
+const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = '/resume.pdf';
+  link.download = 'resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+};
+
 export default function Hero() {
   return (
     <section
@@ -66,6 +75,12 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.55 }}
           >
+            <button
+              onClick={handleDownload}
+              className="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-500/25 transition hover:-translate-y-0.5 hover:shadow-brand-500/40"
+            >
+              Download Resume
+            </button>
             <Link
               to="#contact"
               onClick={(e) => {
@@ -73,7 +88,7 @@ export default function Hero() {
                 const section = document.getElementById('contact');
                 if (section) section.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-500/25 transition hover:-translate-y-0.5 hover:shadow-brand-500/40"
+              className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-brand-500 hover:text-brand-500 dark:border-slate-700"
             >
               Let's talk
             </Link>
