@@ -1,7 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
-import AnimatedBg from './components/AnimatedBg';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProjectsPage from './pages/ProjectsPage';
@@ -18,7 +17,6 @@ function ScrollToTop() {
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
-      <AnimatedBg />
       <Navbar />
       <ScrollToTop />
       <Routes>

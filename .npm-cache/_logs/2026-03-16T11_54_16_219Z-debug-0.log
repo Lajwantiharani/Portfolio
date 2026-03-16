@@ -1,0 +1,13 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\Portfolio\.npmrc
+5 error config prefix cannot be changed from project config: E:\Portfolio\.npmrc.
+6 silly config load:file:C:\Users\LAJWANTI\.npmrc
+7 silly config load:file:E:\Portfolio\.npm-global\etc\npmrc
+8 verbose title npm run dev
+9 verbose argv "run" "dev"
+10 verbose logfile logs-max:10 dir:E:\Portfolio\.npm-cache\_logs\2026-03-16T11_54_16_219Z-
+11 verbose logfile E:\Portfolio\.npm-cache\_logs\2026-03-16T11_54_16_219Z-debug-0.log
+12 silly logfile done cleaning log files
