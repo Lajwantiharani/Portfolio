@@ -1,10 +1,10 @@
-﻿export const projects = [
+export const projects = [
   {
     title: 'Final Year Project Management System',
     description:
-      'Role-based portal for 100+ students and faculty with secure auth, file uploads, progress tracking, and dashboards—automated workflows cut admin effort by 30%.',
+      'Role-based portal for 100+ students and faculty with secure auth, file uploads, progress tracking, and dashboards�automated workflows cut admin effort by 30%.',
     technologies: ['MERN', 'JWT', 'REST APIs'],
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
+    image: '/fyp-management-system.svg',
     live: '#',
     repo: 'https://github.com/lajwantiharani'
   },
